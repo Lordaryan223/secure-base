@@ -101,38 +101,7 @@ Server runs on `http://localhost:3000`
 
 ---
 
-## 🔐 Environment Variables
 
-Create a `.env` file in the root directory:
-
-```env
-# Server
-PORT=3000
-
-# MongoDB
-MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/projectmanagement
-
-# CORS
-CORS_ORIGIN=http://localhost:5173
-
-# JWT
-ACCESS_TOKEN_SECRET=your_access_token_secret
-ACCESS_TOKEN_EXPIRY=1d
-REFRESH_TOKEN_SECRET=your_refresh_token_secret
-REFRESH_TOKEN_EXPIRY=10d
-
-# Email (Gmail)
-MAILTRAP_SMTP_HOST=smtp.gmail.com
-MAILTRAP_SMTP_PORT=587
-MAILTRAP_SMTP_USER=yourgmail@gmail.com
-MAILTRAP_SMTP_PASS=your_app_password
-
-# Password Reset
-FORGOT_PASSWORD_REDIRECT_URL=http://localhost:5173/reset-password
-
-# Server URL
-SERVER_URL=http://localhost:3000
-```
 
 > 💡 Generate secure secrets: `node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"`
 
